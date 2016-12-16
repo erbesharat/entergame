@@ -1,3 +1,13 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.listElmnt {
+  margin-top: 12px;
+  border-bottom: 1px dashed #999;
+  a {
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 0rem;
+  }
+}

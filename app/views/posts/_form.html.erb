@@ -1,0 +1,22 @@
+<%= form_for @post do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher %>
+    <%= f.text_field :publisher %>
+  </div>
+  <div class="field">
+    <%= f.label :category %>
+    <%= f.select(:category, options_for_select([['News', 'News'], ['Reviews', 'Reviews'], ['Videos', 'Videos'], ['Other', 'Other']])) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

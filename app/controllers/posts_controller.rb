@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.all
+    @posts = Post.all.order("created_at DESC")
   end
 
   def show
@@ -12,8 +12,23 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to @post
+    else
+      render 'new'
+    end
   end
 
   def destroy
+    @movie = Movie.find(params[:id])
+    @movie.destroy
+    redirect_to root_url
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :link, :publisher, :category)
   end
 end

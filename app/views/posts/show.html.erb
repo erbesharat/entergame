@@ -1,2 +1,6 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="row">
+  <h1><%= @post.title %></h1>
+  <h5><a href="<%= @post.link %>"><%= @post.link %></a></h5>
+  <h5><%= @post.publisher %></h5>
+  <h5><%= @post.category %></h5>
+</div>
