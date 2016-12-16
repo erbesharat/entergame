@@ -16,7 +16,7 @@
     <%= f.select(:category, options_for_select([['News', 'News'], ['Reviews', 'Reviews'], ['Videos', 'Videos'], ['Other', 'Other']])) %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :Submit, class: "button expanded" %>
   </div>
 <% end %>
 
