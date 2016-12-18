@@ -1,6 +1,7 @@
 <div class="row">
   <h1><%= @post.title %></h1>
-  <h5><a href="<%= @post.link %>"><%= @post.link %></a></h5>
-  <h5><%= @post.publisher %></h5>
-  <h5><%= @post.category %></h5>
+  <h5><strong>Link: </strong><a href="<%= @post.link %>"><%= @post.link %></a></h5>
+  <h5><strong>Publisher: </strong><%= @post.publisher %></h5>
+  <h5><strong>Category: </strong><%= @post.category %></h5>
+  <h5><strong>Posted by: </strong><%= @writer.email.split("@")[0] %></h5>
 </div>

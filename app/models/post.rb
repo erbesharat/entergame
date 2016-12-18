@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   before_create :randomize_id
+  belongs_to :user
 
   private
   def randomize_id
