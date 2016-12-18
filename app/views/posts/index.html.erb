@@ -1,7 +1,11 @@
 <% @posts.each do |p| %>
 <div class="row listElmnt">
-  <a href="/posts/<%= p.id %>"><%= p.title %></a>
-  <p>Publisher: <%= p.publisher %></p>
-  <p>Category: <%= p.category %></p>
+  <div class="large-6 columns">
+    <a href="/posts/<%= p.id %>"><%= p.title %></a>
+    <p>Publisher: <%= p.publisher %></p>
+  </div>
+  <div class="large-6 columns">
+    <h4 style="float:right"><%= p.category %></h4>
+  </div>
 </div>
 <% end %>
