@@ -25,3 +25,16 @@
 body{
     background: #C2C1C7;
 }
+.listElmnt {
+  margin-top: 12px;
+  border-bottom: 1px dashed #463C54;
+}
+.listElmnt a {
+    font-weight: bold;
+  }
+.listElmnt p {
+    margin-bottom: 0rem;
+}
+.profile{
+    margin-top: 12px;
+}

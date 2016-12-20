@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-3 columns profile">
+    <%= image_tag "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(@user.email)}?s=160", class: "avatar"%>
+    <h5><%= @user.email.split("@")[0] %></h5>
+    <h6>Posts: <%= @posts.count%></h6>
+  </div>
+  <div class="large-9 columns">
+    <% @posts.each do |p| %>
+      <div class="listElmnt">
+        <a href="/posts/<%= p.id %>"><%= p.title %></a>
+        <p>Publisher: <%= p.publisher %></p>
+      </div>
+    <% end %>  
+  </div>
+</div>
