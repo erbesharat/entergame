@@ -1,7 +1,7 @@
 <div class="row">
     <%= form_tag("/filter", method:"get") do%>
     <div class="columns small-11 filterBox">
-        <%= select_tag :publisher, options_for_select([['IGN', 'IGN'], ['Eurogamers','Eurogamers'], ['Other', 'Other']]) %>
+        <%= select_tag :publisher, options_for_select([['IGN', 'IGN'], ['Eurogamer','Eurogamer'], ['Other', 'Other']]) %>
     </div>
     <%= submit_tag :Filter, class: 'button filterBox'%>
     <% end %>
