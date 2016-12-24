@@ -11,4 +11,14 @@ class PagesController < ApplicationController
     @user = current_user
     @posts = Post.where(user_id: current_user)
   end
+
+  def filter
+    @posts = Post.all.where(publisher: filter_param)
+  end
+
+  private
+
+  def filter_param
+    params.require(:publisher)
+  end
 end

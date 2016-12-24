@@ -15,25 +15,30 @@
  *= require foundation_and_overrides
 
  */
+ .filterBox{
+   margin-top:10px;
+ }
 .top-bar{
     background: #800080;
-}
-.top-bar a,li{
+    a,li{
     background: #800080;
     color: white;
+  }
 }
+
 body{
     background: #C2C1C7;
 }
+
 .listElmnt {
   margin-top: 12px;
   border-bottom: 1px dashed #463C54;
-}
-.listElmnt a {
+  a {
     font-weight: bold;
   }
-.listElmnt p {
+  p {
     margin-bottom: 0rem;
+  }
 }
 .profile{
     margin-top: 12px;
